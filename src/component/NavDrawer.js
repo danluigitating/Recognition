@@ -3,18 +3,23 @@ import Drawer from '@material-ui/core/Drawer'
 import {List, ListItem, ListItemText} from '@material-ui/core'
 
 class NavDrawer extends Component {
-    state ={
-        open : true
+    state = {
+        open: this.props.open
     }
-    toggleDrawer() {
+
+    toggleDrawer = () => {
+        console.log('toggle drawer ', this.state)
         this.setState({
-            open: !this.state.open
+            open: !this.props.open
         })
     }
 
     render() {
+        const {
+            open, onClose
+        } = this.props
         const menuList = (
-            <div>
+            <div className={{width: 'auto'}}>
                 <List>
                     {['Create', 'Approve', 'Report', 'Search'].map((menu) => (
                         <ListItem key={menu} button>
@@ -27,8 +32,8 @@ class NavDrawer extends Component {
 
         return (
             <div>
-                <Drawer open={this.state.open} onClose={this.toggleDrawer}>
-                    <div onKeyDown={this.toggleDrawer} onMouseDown={this.toggleDrawer}>
+                <Drawer open={open} onClose={onClose}>
+                    <div onKeyDown={onClose} onMouseDown={onClose}>
                         {menuList}
                     </div>
                 </Drawer>
