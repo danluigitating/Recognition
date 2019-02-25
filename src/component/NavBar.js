@@ -22,14 +22,14 @@ class NavBar extends Component {
                 <AppBar position='static' >
                     <Toolbar>
                         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.handleDrawer} >
-                            <MenuIcon ></MenuIcon>
+                            <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" className={classes.grow} color={'inherit'}>
+                        <Typography variant="title" className={classes.grow} color={'inherit'}>
                             Container Award Recognition System
                         </Typography>
                     </Toolbar>
                 </AppBar>
-                <NavDrawer open={this.state.drawerOpen} onClose={this.handleDrawer}></NavDrawer>
+                <NavDrawer open={this.state.drawerOpen} onClose={this.handleDrawer}  menus={['Create', 'Approve', 'Report', 'Search']}/>
             </div>
         )
     }
