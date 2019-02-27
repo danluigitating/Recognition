@@ -1,5 +1,4 @@
 import React, {PureComponent} from 'react'
-import PropTypes from 'prop-types'
 
 class ReportContainer extends PureComponent {
     render() {
@@ -10,7 +9,5 @@ class ReportContainer extends PureComponent {
         )
     }
 }
-
-ReportContainer.propTypes = {}
 
 export default ReportContainer

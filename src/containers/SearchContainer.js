@@ -1,5 +1,4 @@
 import React, {PureComponent} from 'react'
-import PropTypes from 'prop-types'
 
 class SearchContainer extends PureComponent {
     render() {
@@ -11,6 +10,5 @@ class SearchContainer extends PureComponent {
     }
 }
 
-SearchContainer.propTypes = {}
 
 export default SearchContainer

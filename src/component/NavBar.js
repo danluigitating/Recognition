@@ -29,7 +29,7 @@ class NavBar extends Component {
                         </Typography>
                     </Toolbar>
                 </AppBar>
-                <NavDrawer open={this.state.drawerOpen} onClose={this.handleDrawer}  menus={['Create', 'Approve', 'Report', 'Search']}/>
+                <NavDrawer open={this.state.drawerOpen} menus={['Create', 'Approve', 'Report', 'Search']}/>
             </div>
         )
     }
