@@ -7,11 +7,11 @@ class InputCheckbox extends Component {
         const {value, label} = this.props
         return (
             <div>
-                <FormControlLabel control={<Checkbox value={value} label='Label'></Checkbox>} label={label}/>
-
+                <FormControlLabel control={<Checkbox value={value} label='Label'/>} label={label}/>
             </div>
         )
     }
 }
+
 
 export default InputCheckbox

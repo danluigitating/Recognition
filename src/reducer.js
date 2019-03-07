@@ -1,13 +1,13 @@
 import {combineReducers} from 'redux'
+import drawer from './component/NavDrawerReducer'
+
 
 const constants = () => ({
-    type: ["ALL", "COLA", "NON-TAXABLE", "TAXABLE"],
-    status: ["true", "false"],
-    months: ["All", "January", "February", "March"]
 });
 
 const rootReducer = combineReducers({
-    constants
+    constants,
+    drawer
 })
 
 export default rootReducer
