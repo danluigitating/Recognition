@@ -3,7 +3,7 @@ import React, {PureComponent} from 'react'
 class SearchContainer extends PureComponent {
     render() {
         return (
-            <div>
+            <div className="container">
                 SEARCH CONTAINER
             </div>
         )

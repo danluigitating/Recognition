@@ -1,13 +1,11 @@
 import {combineReducers} from 'redux'
-import drawer from './component/NavDrawerReducer'
 
 
 const constants = () => ({
 });
 
 const rootReducer = combineReducers({
-    constants,
-    drawer
+    constants
 })
 
 export default rootReducer

@@ -4,7 +4,7 @@ import React,{Component} from 'react'
 class ApproveContainer extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 Approve Container
             </div>
         )

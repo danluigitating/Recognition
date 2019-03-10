@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import {Typography} from '@material-ui/core'
 import attributes from '../constants/attributes'
 import InputCheckbox from '../component/InputCheckbox'
-import Button from '@material-ui/core/Button'
 import Input from '../component/Input'
+import Button from '../component/Button'
 
 class CreateContainer extends Component {
     render() {
@@ -30,7 +30,7 @@ class CreateContainer extends Component {
                 <div className={"row "}>
                     <Input label='Requestor'/>
                     <Input label='Team'/>
-                    <Input label='Are you the employees supervisor?'/>
+                    <InputCheckbox label='Are you the employees supervisor?'/>
                 </div>
                 <div className={"row"}>
                     <Input label='Award to'/>
